@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = SimilarityChecker::VERSION
   spec.authors       = ["Sri Harsha Kappala"]
   spec.email         = ["sriharsha.kappala@hotmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = %q{Pattern Matching & Similarity Index Calculator for Strings}
+  spec.description   = %q{Takes two strings as an input and returns similarity index out of a range of 0 to 100}
+  spec.homepage      = "https://github.com/sriharshakappala/similarity_checker"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
