@@ -1,31 +1,37 @@
-# SimilarityChecker
+# Similarity Checker Gem
 
-TODO: Write a gem description
+Pattern Matching & Similarity Index Calculator
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Install the gem by:
 
-```ruby
-gem 'similarity_checker'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install similarity_checker
+		$ gem install similarity_checker
 
 ## Usage
 
-TODO: Write usage instructions here
+Open irb
+
+		$ require 'similarity_checker'
+		$ SimilarityChecker.get_similarity_index("str1", "str2")
+
+The `get_similarity_index` method takes two strings as an argument and returns the similairy index between them out of a band between 0 to 100.
+
+## Example
+
+		irb(main):001:0> SimilarityChecker.get_similarity_index("string", "string")
+		=> 100.0
+
+		irb(main):002:0> SimilarityChecker.get_similarity_index("teststringone", "test string two")
+		=> 72.72727272727273
+		
+		irb(main):003:0> SimilarityChecker.get_similarity_index("test string one", "test string two")
+		=> 80.0
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/similarity_checker/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
+1. Fork it ( https://github.com/sriharshakappala/similarity_checker/fork )
+2. Create your feature branch (`git checkout master`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
+4. Push to the branch (`git push origin master`)
 5. Create a new Pull Request
