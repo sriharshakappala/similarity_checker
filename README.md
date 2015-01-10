@@ -19,13 +19,13 @@ The `get_similarity_index` method takes two strings as an argument and returns t
 
 ## Example
 
-		irb(main):001:0> SimilarityChecker.get_similarity_index("string", "string")
+		$ SimilarityChecker.get_similarity_index("string", "string")
 		=> 100.0
 
-		irb(main):002:0> SimilarityChecker.get_similarity_index("teststringone", "test string two")
+		$ SimilarityChecker.get_similarity_index("teststringone", "test string two")
 		=> 72.72727272727273
 		
-		irb(main):003:0> SimilarityChecker.get_similarity_index("test string one", "test string two")
+		$ SimilarityChecker.get_similarity_index("test string one", "test string two")
 		=> 80.0
 
 ## Contributing
